@@ -1,16 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
 }
+
 :root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
     --main-blue: #45567d;
     --main-gray: #303841;
 }
+
 body {
     font-family: 'Poppins', sans-serif;
     font-size: 1.8rem;
@@ -18,14 +20,17 @@ body {
     line-height: 1.4;
     color: var(--main-white);
 }
-li{
+
+li {
     list-style-type: none;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--main-white);
 }
-.nav-bar{
+
+.nav-bar {
     position: fixed;
     top: 0;
     left: 0;
@@ -36,19 +41,23 @@ a{
     box-shadow: 0 2px 0 rgb(0 0 0 / 40%);
     z-index: 10;
 }
-.nav-bar ul{
+
+.nav-bar ul {
     display: flex;
-    margin-right:2rem ;
+    margin-right: 2rem;
 }
-.nav-bar a{
+
+.nav-bar a {
     display: block;
     padding: 1rem;
     font-size: 2rem;
 }
+
 .nav-bar ul li:hover {
     background-color: var(--main-blue)
 }
-.my-details{
+
+.my-details {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -56,40 +65,47 @@ a{
     width: 100%;
     height: 100vh;
     background-color: var(--main-gray);
-    background-image: linear-gradient(
-        62deg, #3a3d40 0%, #181719 100%);
+    background-image: linear-gradient( 62deg, #3a3d40 0%, #181719 100%);
 }
-h1, h2, p{
+
+h1, h2, p {
     font-family: 'Raleway', sans-serif;
 }
-h1{
+
+h1 {
     font-size: 6rem;
 }
-h2{
+
+h2 {
     font-size: 3.5rem;
 }
-.my-details h1{
+
+.my-details h1 {
     font-family: Raleway;
     font-weight: 700;
     text-align: center;
 }
-.my-details p{
+
+.my-details p {
     font-size: 3rem;
     font-weight: 200;
     font-style: italic;
     color: var(--main-red);
 }
-.my-work{
+
+.my-work {
     text-align: center;
     padding: 10rem 2rem;
     background: var(--main-blue);
 }
-.work-section-header{
+
+.work-section-header {
     max-width: 840px;
     margin: 0 auto 6rem auto;
     border-bottom: 0.2rem solid var(--main-white);
 }
-.project-grid{
+
+.project-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     grid-gap: 4rem;
@@ -98,69 +114,115 @@ h2{
     margin: 0 auto;
     margin-bottom: 6rem;
 }
+
 .project {
     background: var(--main-gray);
     box-shadow: 1px 1px 2px rgb(0 0 0 / 50%);
     border-radius: 2px;
 }
+
 .project-image {
     height: calc(100% - 6.8rem);
     width: 100%;
     object-fit: cover;
 }
-img{
+
+img {
     display: block;
 }
+
 .project-title {
     font-size: 2rem;
     padding: 2rem 0.5rem;
 }
 
-.code{
+.code {
     color: var(--main-gray);
     transition: color 0.3s ease-out;
 }
-.project:hover .code{
+
+.project:hover .code {
     color: var(--main-red);
 }
-.show-all-btn{
+
+.show-all-btn {
     font-size: 2rem;
     background: var(--main-gray);
     transition: background 0.3s ease-out;
 }
 
-.btn{
+.btn {
     display: inline-block;
     padding: 1rem 2rem;
     border-radius: 2px;
 }
-.show-all-btn:hover{
+
+.show-all-btn:hover {
     background-color: var(--main-red);
     cursor: pointer;
 }
-.show-all-btn:hover i{
-    margin-left: 2px;
+
+.show-all-btn:hover i {
+    transform: translateX(3px);
 }
-.show-all-btn > i {
+
+.show-all-btn>i {
     margin-left: 0px;
-    transform: translateX(0);
     transition: transform 0.3s ease-out;
 }
-.social-section{
-    background-color: var(--main-gray);
+
+.social-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     text-align: center;
-    padding: 10rem 2rem;
+    width: 100%;
+    height: 80vh;
+    padding: 0 2rem;
+    background: var(--main-gray);
+    border-bottom: 4px solid var(--main-red);
 }
-.social-section h2{
+
+.social-section h2 {
     font-family: raleway;
 }
-.social-section p{
+
+.social-section p {
     margin-bottom: 40px;
 }
-.contact-link-wrapper{
-    width: 60%;
-    margin: 0 auto;
+
+.contact-link-wrapper {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1280px;
+    margin-top: 4rem;
+    flex-wrap: wrap;
+}
+
+.contact-link {
+    font-size: 2rem;
+    text-shadow: 2px 2px 1px #1f1f1f;
+    transition: transform 0.3s ease-out;
+    font-family: poppins;
+}
+
+.contact-link i {
+    margin-right: 5px;
+}
+.contact-link:hover{
+    transform: translateY(8px);
+}
+.footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    width: 100%;
+    height: 11vh;
+    background-color: var(--main-gray);
+}
+.footer p{
+    padding: 15px 0;
+    margin-top: 5px;
 }
