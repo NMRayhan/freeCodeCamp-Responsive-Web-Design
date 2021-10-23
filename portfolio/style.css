@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 :root {
     --main-white: #f0f0f0;
     --main-red: #be3144;
@@ -211,10 +215,12 @@ img {
 .contact-link i {
     margin-right: 5px;
 }
-.contact-link:hover{
+
+.contact-link:hover {
     transform: translateY(8px);
 }
-.footer{
+
+.footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -222,7 +228,8 @@ img {
     height: 11vh;
     background-color: var(--main-gray);
 }
-.footer p{
+
+.footer p {
     padding: 15px 0;
     margin-top: 5px;
 }

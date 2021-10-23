@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
         integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -28,7 +29,7 @@
         <section class="my-work" id="work">
             <h2 class="work-section-header">These are some of my projects</h2>
             <div class="project-grid">
-                <a href="https://codepen.io/Rayhan2361/pen/JjyGdQJ" target="_blank" class="project">
+                <a data-aos="fade-right" href="https://codepen.io/Rayhan2361/pen/JjyGdQJ" target="_blank" class="project">
                     <img src="https://i.ibb.co/fFpSXgW/tribute-Norman.png" alt="tribute-Norman" class="project-image">
                     <p class="project-title">
                         <span class="code">
@@ -37,7 +38,7 @@
                                 <span class="code">/></span>
                     </p>
                 </a>
-                <a href="https://codepen.io/Rayhan2361/pen/abydZKY" target="_blank" class="project">
+                <a data-aos="zoom-in" href="https://codepen.io/Rayhan2361/pen/abydZKY" target="_blank" class="project">
                     <img src="https://i.ibb.co/h7MHyyL/survey-form.png" alt="survey-form" class="project-image">
                     <p class="project-title">
                         <span class="code">
@@ -46,7 +47,7 @@
                                 <span class="code">/></span>
                     </p>
                 </a>
-                <a href="https://codepen.io/Rayhan2361/pen/BadjOpz" target="_blank" class="project">
+                <a data-aos="fade-left" href="https://codepen.io/Rayhan2361/pen/BadjOpz" target="_blank" class="project">
                     <img src="https://i.ibb.co/1K2mVCG/JS-Document.png" alt="JS-Document" class="project-image">
                     <p class="project-title">
                         <span class="code">
@@ -55,7 +56,7 @@
                                 <span class="code">/></span>
                     </p>
                 </a>
-                <a href="https://codepen.io/Rayhan2361/pen/jOLWLYa" target="_blank" class="project">
+                <a data-aos="fade-right" href="https://codepen.io/Rayhan2361/pen/jOLWLYa" target="_blank" class="project">
                     <img src="https://i.ibb.co/nbY5MCx/landing-page.png" alt="landing-page" class="project-image">
                     <p class="project-title">
                         <span class="code">
@@ -65,16 +66,16 @@
                     </p>
                 </a>
             </div>
-            <a href="https://codepen.io/Rayhan2361" target="_blank" class="show-all-btn btn">
+            <a data-aos="zoom-in" href="https://codepen.io/Rayhan2361" target="_blank" class="show-all-btn btn">
                 Show All <i class="fas fa-angle-right"></i>
             </a>
         </section>
         <section class="social-section" id="contact">
-            <div class="social-section-header">
+            <div data-aos="zoom-in-up" class="social-section-header">
                 <h2>Let's work together...</h2>
                 <p>How do you take your coffee?</p>
             </div>
-            <div class="contact-link-wrapper">
+            <div data-aos="zoom-in-down" class="contact-link-wrapper">
                 <a class="contact-link btn" href="https://www.facebook.com/nur.mohammad.rayhan.1997/" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a>
                 <a class="contact-link btn" href="https://github.com/NMRayhan" target="_blank"><i class="fab fa-github-square"></i>Github</a>
                 <a class="contact-link btn" href="https://www.linkedin.com/in/nur-mohammad-rayhan-71a530160/" target="_blank"><i class="fab fa-linkedin"></i>linkedin</a>
@@ -87,6 +88,10 @@
         <p>**Just a Demo Portfolio for My Course Purpose</p>
         <p>©Created for freeCodeCamp Assignment</p>
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 
 </html>
